@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server
+  labels:
+    name: server
+    app: server
+spec:
+  containers:
+  - name: d1-server
+    image: lukaisailovic/d1_server:1
+    ports: 
+    - containerPort: 8081

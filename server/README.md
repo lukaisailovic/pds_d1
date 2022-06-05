@@ -1,0 +1,1 @@
+kubectl expose pod server --type=LoadBalancer --port=8081

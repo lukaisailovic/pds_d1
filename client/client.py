@@ -1,7 +1,8 @@
 import requests
 from requests.structures import CaseInsensitiveDict
+import os
 
-url = "http://localhost:8081/users"
+url = os.getenv("SERVER_URL","http://localhost:8081/users")
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
