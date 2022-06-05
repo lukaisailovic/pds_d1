@@ -1,9 +1,6 @@
 FROM python:3
 
 WORKDIR /home
-COPY app.py . 
+COPY client.py . 
 
-RUN pip install flask
-
-
-CMD python app.py
+CMD python client.py
